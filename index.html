@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mastermind Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Mastermind Survey</h1>
+    <p id="description"><em>Thanks for taking the time to help us improve the game!</em></p>
+ <form id="survey-form">
+<fieldset>
+        <label for="name" id="name-label"> Name: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+        <label for="email" id="email-label">Email Address: <input id="email" name="email" type="email" required placeholder="Enter your email address"/></label>
+        <label for="age" id="number-label">Age (optional): <input id="number" name="age" type="number" 
+min="16" max="100"     
+required placeholder="age"/></label>
+ <label for="feature" id="survey-form">What is your favorite feature?
+          <select id="dropdown" name="feature">
+            <option value="">(select one)</option>
+            <option value="1">Create custom quizzes</option>
+            <option value="2">Trivia Categories</option>
+            <option value="3">Trivia Questions</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+<label>How often do you use Mastermind?
+   <label for="weekly"><input id="weekly" type="radio" name="app-usage"
+value="1" class="inline" /> Weekly</label>
+</label>
+  <label for="daily"><input id="daily" type="radio" name="app-usage"
+value="2" class="inline" /> Daily</label>
+  <label for="Not so often"><input id="Not-so-often" type="radio" name="app-usage"
+value="3" class="inline" /> Not so often</label>
+<label>
+Which of the following features would you like added? <em>(Choose all that apply)</em>
+</label>
+<label>
+   <input id="custom-categories" type="checkbox" required name="custom-categories" 
+value="1" class="inline" />
+  Custom Categories
+</label>
+<label>
+   <input id="player" type="checkbox" required name="player" 
+value="2" class="inline" />
+  Player vs Player
+</label>
+<label>
+   <input id="timed" type="checkbox" required name="timed" 
+value="3" class="inline" />
+  Timed Quizzes
+</label>
+<label>
+   <input id="friends" type="checkbox" required name="friends" 
+value="4" class="inline" />
+  Add Friends
+</label>
+<label>
+   <input id="challenge" type="checkbox" required name="challenge" 
+value="5" class="inline" />
+  Challenge Friends
+</label>
+ <label for="feedback">Additional Feedback/Suggestions:
+          <textarea id="feedback" name="bio" rows="3" cols="30" placeholder="Feedback and suggestions go here."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit"
+id="submit" />
+
+ </form>
+  </body>
+  </html>
